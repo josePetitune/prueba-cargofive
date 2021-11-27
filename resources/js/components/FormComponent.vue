@@ -53,7 +53,7 @@
                                     <b-col cols="12" md="12">
                                         <b-alert v-model="showDismissibleAlertSuccess" variant="success" dismissible>{{messageFile}}</b-alert>
                                         <b-alert v-model="showDismissibleAlert" variant="danger" dismissible>{{messageFile}}</b-alert>
-                                        <b-button type="submit" class="btn-form">Guardar</b-button>
+                                        <b-button type="submit" class="btn-form" variant="primary">Guardar</b-button>
                                     </b-col>
                                 </b-row>
                             </b-container>
