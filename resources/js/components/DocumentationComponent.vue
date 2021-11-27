@@ -74,15 +74,22 @@
                 id:7,
                 img:'storage/logo-infyom.png',
                 title:'Infyom 8.0',
-                text:'creación de API y scaffold CRUD',
+                text:'Creación de API y scaffold CRUD',
                 description:'Migración, Modelo, Controlador, Repositorio '
               },
               {
                 id:8,
                 img:'storage/logo-Swagger.png',
                 title:'Swagger dev-master',
-                text:'framework de gestion de api',
-                description:'documentacion de api /api/docs'
+                text:'Framework de gestion de api',
+                description:'Documentacion de api /api/docs'
+              },
+              {
+                id:8,
+                img:'storage/logo-laravel-excel.png',
+                title:'Laravel Excel 3.1',
+                text:'Está destinado a ser PhpSpreadsheet con sabor a Laravel: una envoltura simple pero elegante con el objetivo de simplificar las exportaciones e importaciones.',
+                description:'Fue utilizado para importar la informacion del excel a la base de datos'
               }
           ]
       }
