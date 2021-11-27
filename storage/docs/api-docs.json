@@ -1,0 +1,18 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Pruebas para CargoFive API",
+        "version": "1.0.0"
+    },
+    "basePath": "/api/v1",
+    "paths": {},
+    "definitions": {},
+    "securityDefinitions": {
+        "sanctum": {
+            "type": "apiKey",
+            "description": "Auth Bearer Token\r\n *       Formato 'Bearer <access_token>'",
+            "name": "Authorization",
+            "in": "header"
+        }
+    }
+}
