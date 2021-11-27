@@ -10,7 +10,7 @@
                         <b-form @submit.prevent="onSubmitValidate">
                             <b-container>
                                 <b-row>
-                                    <b-col cols="12" md="12" class="mb-3">
+                                    <b-col cols="12" md="12" class="mb-2">
                                         <b-form-group description="Nombre">
                                             <b-form-input
                                                 v-model="data.nombre"
@@ -21,7 +21,7 @@
                                         </b-form-group>
                                     </b-col>
 
-                                    <b-col cols="12" md="12" class="mb-3">
+                                    <b-col cols="12" md="12" class="mb-2">
                                         <b-form-group description="Fecha">
                                             <input type="date"
                                                 class="form-control"
@@ -36,7 +36,7 @@
                                         <span>El archivo excel a ingresar debe cumplir por lo menos con el siguiente estandar:</span>
                                         <b-img :src="img" alt="" style="width:100%"/>
                                     </b-col>
-                                    <b-col cols="12" md="12" class="mb-5">
+                                    <b-col cols="12" md="12" class="mb-2">
                                         <b-form-group description="Advertencia: Solo son permitidos archivos excel">
                                             <b-form-file
                                                 type="file"
@@ -110,19 +110,19 @@
                     if($(this.$refs.file.files[0]) !== undefined){
                         formData.append('file', this.$refs.file.files[0])
                     }
-                    this.show = true
+                    this.show = !this.show
                     await axios.post(url , formData)
                     .then((response)=>{
                         this.messageFile = 'Hemos registrado la informacion correctamente'
                         this.showDismissibleAlert=false
                         this.showDismissibleAlertSuccess= true
                         this.items = response.data.data
+                        this.show = true
                     }).catch(error => {
-                        console.log(error);
                         this.showDismissibleAlert=true
                         this.showDismissibleAlertSuccess= false
-                        this.show = false
-                        this.messageFile = 'Lo sentimos, parece que ocurrion un error de comunicacion o puede que el formato del excel no cumple con el estandar solicitado :('
+                        this.show = !this.show
+                        this.messageFile = 'Lo sentimos, parece que ocurrio un error de comunicacion o puede que el formato del excel no cumple con el estandar solicitado :('
                     });
 
                 }else{

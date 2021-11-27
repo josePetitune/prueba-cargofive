@@ -86,7 +86,12 @@
     watch: { 
       	items: function(newVal, oldVal) { // watch it
           console.log('Prop changed: ', newVal, ' | was: ', oldVal)
-          this.isBusy = !this.isBusy
+          if (this.show) {
+            this.isBusy = false  
+          }else{
+            this.isBusy = true
+          }
+          
         }
     },
     data () {

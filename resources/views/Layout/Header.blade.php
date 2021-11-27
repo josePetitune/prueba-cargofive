@@ -9,11 +9,11 @@
         <li class="nav-item active">
             <a class="nav-link" href="{{route('Dashboard')}}">REGISTRO DE RUTAS</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="{{route('Documentation')}}">DOCUMENTACION</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/josePetitune/prueba-cargofive" data-toggle="tooltip" data-placement="top" title="Instagram">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://github.com/josePetitune/prueba-cargofive" target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram">
             <span class="ion-logo-github"></span> Git-Hub
           </a>
         </li>
