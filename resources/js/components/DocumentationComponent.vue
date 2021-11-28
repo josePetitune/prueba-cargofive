@@ -85,7 +85,7 @@
                 description:'Documentacion de api /api/docs'
               },
               {
-                id:8,
+                id:9,
                 img:'storage/logo-laravel-excel.png',
                 title:'Laravel Excel 3.1',
                 text:'Está destinado a ser PhpSpreadsheet con sabor a Laravel: una envoltura simple pero elegante con el objetivo de simplificar las exportaciones e importaciones.',
