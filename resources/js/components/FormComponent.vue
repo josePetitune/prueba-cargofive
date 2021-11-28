@@ -39,7 +39,6 @@
                                     <b-col cols="12" md="12" class="mb-2">
                                         <b-form-group description="Advertencia: Solo son permitidos archivos excel">
                                             <b-form-file
-                                                type="file"
                                                 placeholder="Inserte el archivo aqui" 
                                                 drop-placeholder="Arrastra archivo aqui..."
                                                 ref="file"
@@ -47,6 +46,7 @@
                                                 id="file"
                                                 :state="Boolean(file)"
                                                 accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+                                                required
                                             ></b-form-file>
                                         </b-form-group>
                                     </b-col>
